@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author ACER
+ */
+public class TriPrism<T extends Number> {
+    // my private variables
+    private T length;
+    private T base;
+    private T height;
+
+  // this is for my setters sin
+    public void setLength(T length) {
+        this.length = length;
+    }
+
+    public void setBase(T base) {
+        this.base = base;
+    }
+
+    public void setHeight(T height) {
+        this.height = height;
+    }
+
+    // this is for my getters sin
+    public T getLength() {
+        return length;
+    }
+
+    public T getBase() {
+        return base;
+    }
+
+    public T getHeight() {
+        return height;
+    }
+
+    // for the calculationsss for the next file gets
+    public double getVolume() {
+        return length.doubleValue() *
+               (0.5 * base.doubleValue() * height.doubleValue());
+    }
+}
+
